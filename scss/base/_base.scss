@@ -1,1 +1,20 @@
 @use "../utilities/variables" as *;
+
+/* Estilos base globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; // O la fuente que uses en tu proyecto
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden; // Previene el scroll horizontal no deseado (clave para la nota)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

@@ -14,13 +14,3 @@
 // 4. Components
 @use "components/cards";
 @use "components/buttons";
-/* Animación nativa de transición en tarjetas y botones */
-.card, .btn {
-  transition: all 0.4s ease-in-out !important;
-
-  &:hover {
-    transform: translateY(-8px) scale(1.02) !important;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25) !important;
-    background-color: #fff3cd !important;
-  }
-}

@@ -11,16 +11,33 @@
   border-color: #d4af37;
 }
 
-.card {
-  background: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition: transform 0.3s ease;
+/* Estilos base globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.card:hover {
-  transform: translateY(-5px);
-  border-color: #d4af37;
+
+body {
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos tipográficos generales */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+body, p, a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card {
@@ -35,16 +52,8 @@
   border-color: #d4af37;
 }
 
-.card {
-  background: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition: transform 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-  border-color: #d4af37;
+.navbar-brand {
+  font-weight: 700;
 }
 
 footer {
@@ -54,16 +63,20 @@ footer {
   padding: 1.5rem;
 }
 
+/* Estilos para las tarjetas y efecto hover */
 .card {
-  background: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 .card:hover {
-  transform: translateY(-5px);
-  border-color: #d4af37;
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2) !important;
+}
+.card:hover .card-img-top {
+  transform: scale(1.08);
+}
+.card .card-img-top {
+  transition: transform 0.5s ease;
 }
 
 .card {
@@ -76,14 +89,4 @@ footer {
 .card:hover {
   transform: translateY(-5px);
   border-color: #d4af37;
-}
-
-/* Animación nativa de transición en tarjetas y botones */
-.card, .btn {
-  transition: all 0.4s ease-in-out !important;
-}
-.card:hover, .btn:hover {
-  transform: translateY(-8px) scale(1.02) !important;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25) !important;
-  background-color: #fff3cd !important;
 }/*# sourceMappingURL=main.css.map */

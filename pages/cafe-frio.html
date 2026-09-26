@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanCafé | Café Frío y Bebidas Heladas</title>
+    <meta name="description" content="Descubrí nuestra selección de café frío: Macchiatos, Cappuccinos, Lattes, Cold Brews y más en UrbanCafé.">
+    <meta name="keywords" content="cafe frio, cold brew, iced latte, frappe, urbancafe">
+
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tu CSS compilado desde SCSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body class="bg-light">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm py-1">
+            <div class="container">
+                <a class="navbar-brand p-0" href="../index.html">
+                    <img src="../img/logo.png" alt="Logotipo oficial de UrbanCafé, diseño minimalista en blanco" style="height: 80px; width: auto; object-fit: contain;">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación de toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-4 align-items-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="cafeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Café
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark shadow" aria-labelledby="cafeDropdown">
+                                <li><a class="dropdown-item" href="cafe-caliente.html">Café Caliente</a></li>
+                                <li><a class="dropdown-item active" href="cafe-frio.html">Café Frío</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="panaderia.html">Panadería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="merch.html">Merch</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 pt-5">
+        <section class="row align-items-center justify-content-center min-vh-75 py-4">
+            
+            <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
+                <div id="coldCoffeeCarousel" class="carousel slide carousel-fade shadow rounded overflow-hidden" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/i1.jpg" class="d-block w-100 hero-img" alt="Vaso transparente de café frío Macchiato decorado con hielo en cubos y leche">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/i2.jpg" class="d-block w-100 hero-img" alt="Preparación artesanal de un Cappuccino helado con espuma cremosa y abundante hielo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/i3.jpg" class="d-block w-100 hero-img" alt="Vaso alto de Iced Latte combinado con espresso doble y leche fría">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/i4.jpg" class="d-block w-100 hero-img" alt="Cold Brew de especialidad con proceso de extracción lenta servido sobre rocas de hielo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/i5.jpg" class="d-block w-100 hero-img" alt="Bebida refrescante de café frío Mocha de UrbanCafé con notas de chocolate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1200">
+                <h1 class="mb-4 fw-bold text-dark">Café Frío</h1>
+                
+                <div class="coffee-list">
+                    <div class="mb-3">
+                        <h2 class="h5 fw-bold text-dark mb-1">Macchiatos</h2>
+                        <p class="text-secondary fw-semibold small mb-0">Un espresso frío "manchado" con un toque de leche fría y espuma ligera sobre hielo. Refrescante y sutil.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <h2 class="h5 fw-bold text-dark mb-1">Cappuccinos</h2>
+                        <p class="text-secondary fw-semibold small mb-0">La versión helada del clásico: espresso equilibrado, leche fría, abundante hielo y una corona de espuma cremosa.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <h2 class="h5 fw-bold text-dark mb-1">Lattes</h2>
+                        <p class="text-secondary fw-semibold small mb-0">Espresso doble combinado con leche fría y hielo en cubos. Suave, cremoso y perfecto para cualquier hora.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <h2 class="h5 fw-bold text-dark mb-1">Cold Brews</h2>
+                        <p class="text-secondary fw-semibold small mb-0">Extracción lenta en frío durante 18 horas. Sin amargor, con notas dulces muy marcadas y alta energía.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <h2 class="h5 fw-bold text-dark mb-1">Americanos</h2>
+                        <p class="text-secondary fw-semibold small mb-0">Espresso doble vertido sobre agua fría y hielo. Una opción ligera y directa para disfrutar las notas del grano.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <h2 class="h5 fw-bold text-dark mb-1">Mochas</h2>
+                        <p class="text-secondary fw-semibold small mb-0">La combinación irresistible de espresso frío, rico chocolate semi-amargo de la casa, leche y hielo.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 UrbanCafé. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation JS e inicialización -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

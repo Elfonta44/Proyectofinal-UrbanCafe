@@ -3,98 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>UrbanCafé | Café de Especialidad y Pausa Urbana</title>
+    <meta name="description" content="Disfruta del mejor café de especialidad al paso y pastelería artesanal en UrbanCafé. Tu pausa diaria en el corazón de la ciudad.">
+    <meta name="keywords" content="cafe de especialidad, urbancafe, espresso, pasteleria artesanal, cafe al paso, buenos aires">
+    
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Fontana | Inicio</title>
 
-    <link rel="stylesheet" href="./scss/main.css">
-
+    <!-- Tu CSS compilado desde SCSS -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body class="bg-light">
+
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm py-1">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Fontana</a>
+                <a class="navbar-brand p-0" href="index.html">
+                    <img src="img/logo.png" alt="Logotipo oficial de UrbanCafé, con tipografía minimalista y moderna en color blanco" style="height: 80px; width: auto; object-fit: contain;">
+                </a>
                 
-             
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación de toggle">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-4 align-items-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="cafeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Café
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark shadow" aria-labelledby="cafeDropdown">
+                                <li><a class="dropdown-item" href="pages/cafe-caliente.html">Café Caliente</a></li>
+                                <li><a class="dropdown-item" href="pages/cafe-frio.html">Café Frío</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/sobre-mi.html">Sobre mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="pages/panaderia.html">Panadería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/merch.html">Merch</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="container my-5">
-        <article>
-            <div class="text-center mb-5">
-            <h2>Bienvenido a mi sitio web</h2>
-            <p>Este es un sitio web donde estoy aprendiendo desarrollo web.</p>
-            </div>
+    <main class="container my-5 pt-5">
+        <section class="row align-items-center justify-content-center min-vh-75 py-4">
             
-            <section class="mb-4"data-aos="fade-up">
-                <h3>Sobre mí</h3>
-                <p>Soy un apasionado por la tecnología, la psicología y el arte.</p>
-            </section>
-
-            
-           <section class="mb-4" data-aos="fade-up" data-aos-duration="1200">
-                <h3>Mis habilidades</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">Ilustrador</li>
-                    <li class="list-group-item">Diseñador</li>
-                    <li class="list-group-item">Psicología social</li>
-                    <li class="list-group-item">Motion graphics y edición</li>
-                </ul>
-            </section>
-
-            <section class="mb-4" data-aos="fade-up" data-aos-duration="1200">
-                <h3>Mi espacio creativo</h3>
-                <div id="creativeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
+                <div id="heroCarousel" class="carousel slide carousel-fade shadow rounded overflow-hidden" data-bs-ride="carousel" data-bs-interval="2000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/man.avif" class="d-block w-100 rounded" alt="Dibujo de un hombre trabajando">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Espacio de trabajo digital</h5>
-                            </div>
+                            <img src="img/1.jpg" class="d-block w-100 hero-img" alt="Vista exterior de la fachada del local UrbanCafé con diseño urbano y moderno">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/2.jpg" class="d-block w-100 hero-img" alt="Ambiente interior de la cafetería reflejando el ritmo dinámico de la ciudad">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/3.jpg" class="d-block w-100 hero-img" alt="Primer plano de granos de café de especialidad tostados y seleccionados">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/4.jpg" class="d-block w-100 hero-img" alt="Cliente disfrutando de un vaso de café para llevar al aire libre">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/5.jpg" class="d-block w-100 hero-img" alt="Taza de café espresso con diseño detallado de arte latte en su superficie">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/6.jpg" class="d-block w-100 hero-img" alt="Barista atendiendo en la barra principal de UrbanCafé">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/7.jpg" class="d-block w-100 hero-img" alt="Vaso térmico institucional de UrbanCafé ideal para consumir al paso">
                         </div>
                     </div>
                 </div>
-            </section>
-        </article>
+            </div>
+
+            <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1200">
+                <div class="shadow rounded overflow-hidden">
+                    <img src="img/derecha.jpg" class="d-block w-100 hero-img" alt="Afiche institucional con la frase principal: Tu pausa en la ciudad de UrbanCafé">
+                </div>
+            </div>
+
+            <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-duration="1400">
+                <p class="text-muted lead px-md-5 mx-auto" style="max-width: 800px;">
+                    En <strong>UrbanCafé</strong> fusionamos la velocidad de la vida urbana con la precisión del café de especialidad. Un punto de encuentro al paso para recargar energías con la mejor selección de granos y pastelería artesanal.
+                </p>
+            </div>
+
+        </section>
     </main>
 
-    <footer class="bg-body-tertiary text-center py-4 mt-5">
-        <p>&copy; Fontana 2026 - Todos los derechos reservados.</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#" class="text-decoration-none">Instagram</a></li>
-            <li class="list-inline-item"><a href="#" class="text-decoration-none">LinkedIn</a></li>
-            <li class="list-inline-item"><a href="#" class="text-decoration-none">GitHub</a></li>
-        </ul>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 UrbanCafé. Todos los derechos reservados.</p>
+        </div>
     </footer>
-    <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation JS e inicialización -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

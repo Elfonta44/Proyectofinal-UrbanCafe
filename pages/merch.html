@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanCafé | Merch Oficial - Estilo Urbano</title>
+    <meta name="description" content="Descubrí el merch oficial de UrbanCafé: remeras oversize, gorros en tres colores, tote bags y cuadros con marco metálico inspirados en la cultura urbana.">
+    <meta name="keywords" content="urbancafe, merch, remera oversize, gorros, tote bag, cuadro metalico, cultura urbana">
+    
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tu CSS compilado desde SCSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <style>
+        .card-img-wrapper {
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .card-img-wrapper img {
+            transition: transform 0.5s ease-in-out;
+        }
+        .card:hover .card-img-wrapper img {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm py-1">
+            <div class="container">
+                <a class="navbar-brand p-0" href="../index.html">
+                    <img src="../img/logo.png" alt="Logotipo oficial de UrbanCafé, diseño minimalista en blanco" style="height: 80px; width: auto; object-fit: contain;">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación de toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-4 align-items-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="cafeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Café
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark shadow" aria-labelledby="cafeDropdown">
+                                <li><a class="dropdown-item" href="cafe-caliente.html">Café Caliente</a></li>
+                                <li><a class="dropdown-item" href="cafe-frio.html">Café Frío</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="panaderia.html">Panadería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="merch.html">Merch</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 pt-5">
+        <section class="text-center mb-5 pt-3" data-aos="fade-up" data-aos-duration="800">
+            <h1 class="fw-bold text-dark">Merch Oficial</h1>
+            <p class="text-secondary fw-semibold" style="font-size: 1.05rem;">
+                Hacé clic en cualquier imagen para verla en grande. Llevate la esencia de la ciudad a donde vayas.
+            </p>
+        </section>
+
+        <div class="row g-4 pb-5">
+            
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-wrapper" data-bs-toggle="modal" data-bs-target="#modalE1">
+                        <img src="../img/e1.jpg" class="card-img-top" alt="Remera oversize de algodón pesado en color neutro con estampa minimalista de UrbanCafé">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h2 class="h5 fw-bold text-dark mb-2">Remera Oversize</h2>
+                            <p class="text-secondary fw-semibold small mb-2">Diseño urbano y comodidad esencial</p>
+                            <p class="text-muted small">Confeccionada en algodón pesado de alta calidad, corte amplio y estampa minimalista de la marca.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1200">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-wrapper" data-bs-toggle="modal" data-bs-target="#modalE2">
+                        <img src="../img/e2.jpg" class="card-img-top" alt="Gorros estilo urbano de UrbanCafé disponibles en tres colores diferentes">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h2 class="h5 fw-bold text-dark mb-2">Gorros Urban</h2>
+                            <p class="text-secondary fw-semibold small mb-2">Tres colores a elección</p>
+                            <p class="text-muted small">Ideales para tus recorridos en bici o los días frescos en la ciudad. Disponibles en tonos versátiles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1400">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-wrapper" data-bs-toggle="modal" data-bs-target="#modalE3">
+                        <img src="../img/e3.jpg" class="card-img-top" alt="Tote bag sustentable de lona de algodón crudo reforzada con el logotipo de UrbanCafé">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h2 class="h5 fw-bold text-dark mb-2">Tote Bag</h2>
+                            <p class="text-secondary fw-semibold small mb-2">Resistente, práctica y sustentable</p>
+                            <p class="text-muted small">Lona de algodón crudo reforzada, perfecta para llevar tus libros, compu o las compras del día.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1600">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-wrapper" data-bs-toggle="modal" data-bs-target="#modalE4">
+                        <img src="../img/e4.jpg" class="card-img-top" alt="Cuadro decorativo con lámina en alta definición y marco metálico delgado inspirado en la cultura urbana">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h2 class="h5 fw-bold text-dark mb-2">Cuadro Marco Metal</h2>
+                            <p class="text-secondary fw-semibold small mb-2">Arte y estética de la ciudad</p>
+                            <p class="text-muted small">Lámina en alta definición con marco metálico delgado, pensada para darle onda a cualquier espacio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="modal fade" id="modalE1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body position-relative text-center p-0">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="../img/e1.jpg" class="img-fluid rounded shadow-lg" alt="Vista ampliada de la remera oversize UrbanCafé">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalE2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body position-relative text-center p-0">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="../img/e2.jpg" class="img-fluid rounded shadow-lg" alt="Vista ampliada de los gorros urbanos de UrbanCafé">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalE3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body position-relative text-center p-0">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="../img/e3.jpg" class="img-fluid rounded shadow-lg" alt="Vista ampliada de la tote bag sustentable UrbanCafé">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalE4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body position-relative text-center p-0">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="../img/e4.jpg" class="img-fluid rounded shadow-lg" alt="Vista ampliada del cuadro decorativo con marco metálico UrbanCafé">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 UrbanCafé. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation JS e inicialización -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
