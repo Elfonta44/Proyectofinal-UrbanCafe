@@ -4,8 +4,7 @@ Sitio web estático desarrollado como Proyecto Final para el curso de Desarrollo
 
 ## 🚀 Enlace al proyecto en producción
 Podes ver el sitio funcionando en vivo en el siguiente enlace:
-👉 **[Ver UrbanCafé en Vercel/Netlify](PEGÁ_ACÁ_TU_LINK_DE_VERCEL_O_NETLIFY)**
-
+👉 **[Ver UrbanCafé en Vercel](https://proyectofinal-urban-cafe.vercel.app/)
 ---
 
 ## 🛠️ Tecnologías y Características
@@ -21,7 +20,7 @@ Podes ver el sitio funcionando en vivo en el siguiente enlace:
 
 ## 📁 Estructura de Carpetas
 
-La estructura del proyecto cumple estrictamente con los requerimientos del curso:
+
 
 ```text
 /
